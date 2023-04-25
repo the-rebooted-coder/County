@@ -2,13 +2,15 @@ package com.onesilicodiode.happiness;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+@SuppressLint("CustomSplashScreen")
+public class LaunchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.launch_activity);
     }
 }
