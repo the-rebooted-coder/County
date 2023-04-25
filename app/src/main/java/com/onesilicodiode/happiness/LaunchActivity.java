@@ -40,7 +40,7 @@ public class LaunchActivity extends AppCompatActivity {
         new Handler().postDelayed(this::check, splash_screen_time_out);
     }
     private void check() {
-        Intent toLanding = new Intent (LaunchActivity.this,LandingActivity.class);
+        Intent toLanding = new Intent (LaunchActivity.this, MeddlingActivity.class);
         startActivity(toLanding);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         finish();
