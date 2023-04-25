@@ -36,7 +36,7 @@ public class LaunchActivity extends AppCompatActivity {
         new Handler().postDelayed(this::vibrateDeviceThird, feelUIthree);
     }
     private void fireSplashScreen() {
-        int splash_screen_time_out = 2500;
+        int splash_screen_time_out = 3000;
         new Handler().postDelayed(this::check, splash_screen_time_out);
     }
     private void check() {

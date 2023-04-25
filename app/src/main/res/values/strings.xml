@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Happiness</string>
+    <string name="hey_ishu">Hey Ishu! ❤️</string>
+    <string name="every_second_counts_when_it_s_leading_up_to_the_moment_when_we_finally_meet_n_nlet_s_countdown_together_and_make_every_moment_apart_just_a_little_bit_sweeter">Every second counts when it\'s leading up to the moment when we finally meet 👀\n\nLet\'s countdown together and make every moment apart just a little bit sweeter! 🙃</string>
+    <string name="let_s_go_dingo">Let\'s Go Dingo</string>
+    <string name="zenmode">ZenMode</string>
+    <string-array name="greetings">
+        <item>Hey Ishu ❤️</item>
+        <item>Moti</item>
+        <item>Chhipkali</item>
+        <item>Guchu-Muchu</item>
+        <item>Rasgulla</item>
+        <item>Bhaalu</item>
+        <item>Meri Jaan</item>
+    </string-array>
 </resources>

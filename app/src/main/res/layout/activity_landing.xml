@@ -7,26 +7,58 @@
     android:background="@color/black"
     tools:context=".MeddlingActivity">
 
-    <TextView
+    <com.tomer.fadingtextview.FadingTextView
         android:id="@+id/pageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hey!"
-        android:textColor="@color/gray"
         android:fontFamily="@font/p_sans_b"
-        android:textSize="34sp"
+        app:texts="@array/greetings"
+        app:timeout="2200"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"/>
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="34sp" />
 
-    <TextView
-        android:id="@+id/pageDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textColor="@color/white"
-        android:fontFamily="@font/p_sans"
-        android:textSize="30sp"
-        android:layout_below="@id/pageTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"/>
+    <ScrollView
+        android:layout_below="@+id/pageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/pageDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every_second_counts_when_it_s_leading_up_to_the_moment_when_we_finally_meet_n_nlet_s_countdown_together_and_make_every_moment_apart_just_a_little_bit_sweeter"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/p_sans"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/meddlingAnim"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            app:lottie_fileName="meddling_anim.json"
+            app:lottie_loop="true" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/let_s_go_dingo"
+            android:fontFamily="@font/p_sans"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

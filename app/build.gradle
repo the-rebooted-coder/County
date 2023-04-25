@@ -11,14 +11,14 @@ android {
         minSdk 24
         targetSdk 33
         versionCode 1
-        versionName "1.0"
+        versionName "IshuAnshu💫"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -36,7 +36,13 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
+    //Fading Text View
+    implementation 'com.github.rosenpin:fading-text-view:3.0'
     //Lottie Animations
     implementation 'com.airbnb.android:lottie:3.4.0'
+    //Countdown Timer
+    implementation 'com.github.tsuryo:Android-Countdown-Timer:1.2'
+    //Emoji Rain
+    implementation 'com.luolc:emoji-rain:0.1.1'
+
 }

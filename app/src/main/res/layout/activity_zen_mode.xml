@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:keepScreenOn="true"
+    tools:context=".ZenMode">
+
+    <TextView
+        android:id="@+id/trainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/p_sans_b"
+        android:text="🚅 Time to Go"
+        android:textColor="#FF0099CC"
+        android:textSize="34sp" />
+
+    <com.tsuryo.androidcountdown.Counter
+        android:id="@+id/counterZen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:custom_font="@font/p_sans"
+        app:max_time_unit="DAY"
+        app:text_color="#FFE0F3FF"
+        app:text_size="32sp"
+        app:textual_description="true" />
+</RelativeLayout>

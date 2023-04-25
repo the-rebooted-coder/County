@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFE3E3"
     android:layout_height="match_parent"
     tools:context=".LaunchActivity">
     <TextView
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="220dp"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textColor="@color/black"
         android:fontFamily="@font/p_sans_b"
         android:text="@string/app_name"/>
