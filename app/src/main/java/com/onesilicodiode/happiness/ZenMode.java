@@ -5,22 +5,28 @@ import static android.content.ContentValues.TAG;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.util.Log;
+import android.widget.RelativeLayout;
 
 import com.tsuryo.androidcountdown.Counter;
 
 public class ZenMode extends AppCompatActivity {
 
     Counter mCounter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zen_mode);
+        RelativeLayout container = findViewById(R.id.zenMode);
+        AnimationDrawable anim = (AnimationDrawable) container.getBackground();
+        anim.setEnterFadeDuration(6000);
+        anim.setExitFadeDuration(2000);
+        anim.start();
         mCounter = findViewById(R.id.counterZen);
         mCounter.setDate("2023-05-02T00:00:00");
         mCounter.setListener(new Counter.Listener() {
@@ -54,5 +60,4 @@ public class ZenMode extends AppCompatActivity {
         super.onStop();
         finishAffinity();
     }
-
 }

@@ -13,4 +13,11 @@
         <item>Bhaalu</item>
         <item>Meri Jaan</item>
     </string-array>
+    <string-array name="timeToGo">
+        <item>🚅 Time to Go</item>
+        <item>🚅 该走了</item>
+        <item>🚅 जाने के लिए</item>
+        <item>🚅 Il est temps d\'y aller</item>
+        <item>🚅 Время идти</item>
+    </string-array>
 </resources>

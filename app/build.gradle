@@ -42,7 +42,5 @@ dependencies {
     implementation 'com.airbnb.android:lottie:3.4.0'
     //Countdown Timer
     implementation 'com.github.tsuryo:Android-Countdown-Timer:1.2'
-    //Emoji Rain
-    implementation 'com.luolc:emoji-rain:0.1.1'
 
 }

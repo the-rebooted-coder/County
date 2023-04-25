@@ -38,7 +38,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
-        android:backgroundTint="#00C3C3C3"
-        />
+        android:backgroundTint="#00C3C3C3" />
 
 </RelativeLayout>
